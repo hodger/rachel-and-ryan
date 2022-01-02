@@ -24,6 +24,46 @@
   color: white;
 }
 
+.App {
+  background-color: rgb(241, 241, 241);
+}
+
+.content-box {
+  min-height: 90vh;
+}
+
+.photo-box {
+  background-image: url('https://user-images.githubusercontent.com/10540084/147864063-39f42fe3-a7ed-4407-a433-2856f2ece01e.jpg');
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.photo-box h1 {
+  margin: 0;
+  padding: 2rem 2rem 0 2rem;
+  font-size: 20px;
+}
+
+.detail {
+  margin: .25rem 0;
+  font-style: italic;
+}
+
+.subtitle {
+  margin: 0.1rem 0 1rem 0;
+  font-style: normal;
+}
+
+@media only screen and (min-width: 700px) {
+  .photo-box {
+    background-position: 0 -350px;
+  }
+
+  .photo-box h1 {
+    font-size: 30px;
+  }
+}
+
 .App-link {
   color: #61dafb;
 }
