@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  --primary-text-color: #282c34;
 }
 
 .App-logo {
@@ -14,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--primary-text-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,10 +39,29 @@
   background-position: 0 0;
 }
 
-.photo-box h1 {
+.content-box h1 {
   margin: 0;
   padding: 2rem 2rem 0 2rem;
   font-size: 25px;
+}
+
+.content-box h2 {
+  font-size: 20px;
+}
+
+.info-box {
+  
+}
+
+.info-details {
+  text-align: left;
+  padding: 15px;
+}
+
+.section-divider {
+  width: 40%;
+  color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
 
 .detail {
@@ -53,6 +73,39 @@
 .subtitle {
   margin: 0.1rem 0 1rem 0;
   font-style: normal;
+  animation-duration: 3s;
+  animation-name: fade-slidein;
+}
+
+.rsvp-button {
+  border: solid 1px var(--primary-text-color);
+  border-radius: 25px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.rsvp-button:hover {
+  background-color: var(--primary-text-color);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rsvp-button:hover:before {
+  content: "🎉";
+}
+
+.rsvp-button:hover:after {
+  content: "🎉";
+}
+
+.google-map {
+  border: 1px solid var(--primary-text-color);
+  margin-top: 25px;
 }
 
 @media only screen and (min-width: 700px) {
@@ -60,8 +113,12 @@
     background-position: 0 -350px;
   }
 
-  .photo-box h1 {
+  .content-box h1 {
     font-size: 38px;
+  }
+
+  .content-box h2 {
+    font-size: 30px;
   }
 }
 
@@ -69,11 +126,19 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes fade-slidein {
   from {
-    transform: rotate(0deg);
+    opacity: 0%;
+    padding-right: 30px;
   }
+
+  50% {
+    opacity: 0%;
+    padding-right: 30px;
+  }
+
   to {
-    transform: rotate(360deg);
+    opacity: 100%;
+    padding-right: 0;
   }
 }
