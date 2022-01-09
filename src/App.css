@@ -113,6 +113,21 @@
   content: "🎉";
 }
 
+.rsvp-button:focus {
+  background-color: var(--primary-text-color);
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rsvp-button:focus:before {
+  content: "🎉";
+}
+
+.rsvp-button:focus:after {
+  content: "🎉";
+}
+
 .google-map {
   border: 1px solid var(--primary-text-color);
   margin-top: 25px;

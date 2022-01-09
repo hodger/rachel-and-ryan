@@ -38,8 +38,8 @@ function App() {
             <div style={{flex: 1, minWidth: '300px', padding: '0 15px' }}>
               <p style={{marginTop: 0}}>Both the ceremony and reception will be held at Dunn Gardens, a historic garden 10 miles north of downtown Seattle.</p>
               <p>
-                <i>Parking:</i> there is only a small (8 car) parking lot inside the Gardens. However, 
-                street parking is available in the neighborhood outside the entrance.
+                <i>Getting there:</i> We recommend carpooling or using a rideshare app, if possible. There is extremely limited parking at the Gardens themselves, 
+                however street parking is available in the neighborhood outside the entrance.
               </p>
             </div>
           </div>
