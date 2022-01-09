@@ -49,8 +49,36 @@
   font-size: 20px;
 }
 
-.info-box {
-  
+.rsvp-box {
+  background-color: #1d774e;
+  color: white;
+  padding: 50px 0;
+}
+
+.rsvp-button {
+  border: solid 1px white;
+  border-radius: 25px;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+.rsvp-button:hover {
+  background-color: white;
+  color: #1d774e;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.rsvp-button:hover:before {
+  content: "🎉";
+}
+
+.rsvp-button:hover:after {
+  content: "🎉";
 }
 
 .info-details {
@@ -71,7 +99,6 @@
 .section-divider {
   width: 40%;
   color: var(--primary-text-color);
-  margin-bottom: 50px;
 }
 
 .detail {
@@ -85,47 +112,6 @@
   font-style: normal;
   animation-duration: 3s;
   animation-name: fade-slidein;
-}
-
-.rsvp-button {
-  border: solid 1px var(--primary-text-color);
-  border-radius: 25px;
-  padding: 15px;
-  margin-bottom: 20px;
-  font-size: 25px;
-  display: inline-block;
-  text-decoration: none;
-  color: var(--primary-text-color);
-}
-
-.rsvp-button:hover {
-  background-color: var(--primary-text-color);
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.rsvp-button:hover:before {
-  content: "🎉";
-}
-
-.rsvp-button:hover:after {
-  content: "🎉";
-}
-
-.rsvp-button:focus {
-  background-color: var(--primary-text-color);
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.rsvp-button:focus:before {
-  content: "🎉";
-}
-
-.rsvp-button:focus:after {
-  content: "🎉";
 }
 
 .google-map {

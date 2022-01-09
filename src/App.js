@@ -10,9 +10,7 @@ function App() {
         <p className="detail">July 9, 2022</p>
         <p className="detail">Seattle, Washington</p>
       </div>
-      <div className="content-box info-box">
-        <h2>Information & RSVP</h2>
-        <hr className="section-divider" />
+      <div className="rsvp-box">
         <p style={{maxWidth: '500px', margin: 'auto', padding: '10px'}}>
           We're excited for you to join us for our small (but mighty!) wedding in Seattle. We hope this site gives you all the info you need! Please let us know if you can make it by <b>March 1st, 2022</b>.
         </p>
@@ -24,6 +22,10 @@ function App() {
         >
           Click here to RSVP
         </a>
+      </div>
+      <div>
+        <h2>More Information</h2>
+        <hr className="section-divider" />
         <div className="info-details">
           <h3>What you need to know</h3>
           <p><b>When:</b> July 9th, 2022, at 4pm</p>
